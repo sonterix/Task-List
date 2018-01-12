@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+
+body{
+    margin: 0;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #212121;
+}
+
+/* -- task-list-warapper -- */
+#task-list-warapper{
+    width: 400px;
+    box-shadow: 0px 0px 15px 0px #e0e0e0;
+}
+#task-list-warapper h1{
+    font-size: 28px;
+    font-weight: 300;
+}
+#task-list-warapper hr{
+    border: 1px solid #eee;
+}
+#task-list-warapper button{
+    max-width: 120px;
+    margin-bottom: 20px;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 3px 5px 0px #afafaf;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* -- top-bar -- */
+#top-bar, #bottom-bar{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;    
+}
+#top-bar label{
+    font-weight: 300;
+    font-size: 12px;
+    color: #afafaf;
+}
+#top-bar input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #212121;
+    outline: none;
+}
+#top-bar input:focus{
+    color: #00796B;
+    border-color: #00796B;
+}
+#top-bar button{
+    margin-top: 40px;    
+    background-color: #00796B;
+}
+#top-bar button:hover{
+    background-color: #004D40;    
+}
+
+/* -- bottom-bar -- */
+#bottom-bar h1{
+    margin-bottom: 0;
+}
+#bottom-bar ul{
+    padding: 0;
+}
+#bottom-bar li{
+    position: relative;    
+    padding: 8px 20px;
+    font-size: 14px;
+    list-style: none;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+}
+#bottom-bar li:last-child{
+    border-bottom: 1px solid #e0e0e0;
+}
+#bottom-bar li::before{
+    content: "\f00d";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #FB8C00;
+}
+#bottom-bar button{
+    margin-top: 10px;    
+    background-color: #212121;
+}
+#bottom-bar button:hover{
+    background-color: #000;    
+}
