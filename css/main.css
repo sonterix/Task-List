@@ -74,12 +74,15 @@ body{
 #bottom-bar li{
     display: grid;
     grid-template: auto / 10fr 1fr;  
+    margin: 5px 0;
     padding: 8px 20px;
     font-size: 14px;
     list-style: none;
-    border: 1px solid #e0e0e0;
-    border-bottom: none;
+    border-bottom: 1px solid #e0e0e0;
 }
+/* #bottom-bar li:nth-child(odd){
+    background-color: #f3f3f3;
+} */
 #bottom-bar li i{
     display: flex;
     justify-content: flex-end;
@@ -91,13 +94,22 @@ body{
 #bottom-bar li i:hover{
     color: #EF6C00;
 }
-#bottom-bar li:last-child{
-    border-bottom: 1px solid #e0e0e0;
-}
 #bottom-bar button{
     margin-top: 10px;    
     background-color: #212121;
 }
 #bottom-bar button:hover{
     background-color: #000;    
+}
+#bottom-bar input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #212121;
+    outline: none;
+}
+#bottom-bar label{
+    margin-top: 10px;    
+    font-weight: 300;
+    font-size: 12px;
+    color: #afafaf;
 }
